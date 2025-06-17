@@ -1,0 +1,224 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #121212;
+    color: #ffffff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    flex: 1;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.header h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #03dac6;
+    margin-bottom: 0.5rem;
+    text-shadow: 0 0 20px rgba(3, 218, 198, 0.3);
+}
+
+.header p {
+    font-size: 1.2rem;
+    color: #aaaaaa;
+    font-weight: 300;
+}
+
+.upload-section {
+    background: #2a2a2a;
+    border: 2px dashed #03dac6;
+    border-radius: 15px;
+    padding: 3rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    width: 100%;
+    max-width: 600px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.upload-section:hover {
+    background: #333333;
+    border-color: #64ffda;
+    box-shadow: 0 0 30px rgba(3, 218, 198, 0.2);
+}
+
+.upload-section.dragover {
+    background: #333333;
+    border-color: #64ffda;
+    transform: scale(1.02);
+}
+
+.upload-icon {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    color: #03dac6;
+}
+
+.upload-text {
+    font-size: 1.1rem;
+    color: #cccccc;
+    margin-bottom: 1rem;
+}
+
+.file-name {
+    font-size: 1rem;
+    color: #03dac6;
+    font-weight: 500;
+    margin-top: 1rem;
+    display: none;
+}
+
+.file-input {
+    display: none;
+}
+
+.convert-btn {
+    background: #03dac6;
+    color: #000000;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-bottom: 2rem;
+    min-width: 200px;
+    position: relative;
+    overflow: hidden;
+}
+
+.convert-btn:hover:not(:disabled) {
+    background: #64ffda;
+    box-shadow: 0 0 30px rgba(3, 218, 198, 0.5);
+    transform: translateY(-2px);
+}
+
+.convert-btn:disabled {
+    background: #444444;
+    color: #666666;
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: none;
+}
+
+.progress {
+    display: none;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.progress-text {
+    font-size: 1.1rem;
+    color: #03dac6;
+    margin-bottom: 1rem;
+}
+
+.spinner {
+    width: 40px;
+    height: 40px;
+    border: 3px solid #333333;
+    border-top: 3px solid #03dac6;
+    border-radius: 50%;
+    margin: 0 auto;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.download-section {
+    display: none;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.download-btn {
+    background: #03dac6;
+    color: #000000;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+    min-width: 200px;
+}
+
+.download-btn:hover {
+    background: #64ffda;
+    box-shadow: 0 0 30px rgba(3, 218, 198, 0.5);
+    transform: translateY(-2px);
+}
+
+.success-message {
+    color: #4caf50;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+.error-message {
+    color: #f44336;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    display: none;
+}
+
+.footer {
+    background: #111111;
+    text-align: center;
+    padding: 2rem;
+    color: #aaaaaa;
+    font-size: 0.9rem;
+    margin-top: auto;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 1rem;
+    }
+
+    .header h1 {
+        font-size: 2.5rem;
+    }
+
+    .upload-section {
+        padding: 2rem;
+    }
+
+    .upload-icon {
+        font-size: 3rem;
+    }
+}
+
+/* Glowing effect for buttons */
+.glow {
+    box-shadow: 0 0 30px rgba(3, 218, 198, 0.6) !important;
+}

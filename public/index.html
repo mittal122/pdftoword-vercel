@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PTOD File - PDF to DOC Converter</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>PTOD File</h1>
+            <p>Convert PDF to DOC for Free</p>
+        </div>
+
+        <div class="upload-section" id="uploadSection">
+            <div class="upload-icon">📄</div>
+            <div class="upload-text">Drag and drop your PDF here or click to select</div>
+            <div class="file-name" id="fileName"></div>
+            <input type="file" class="file-input" id="fileInput" accept=".pdf">
+        </div>
+
+        <button class="convert-btn" id="convertBtn" disabled>Convert to Word</button>
+
+        <div class="progress" id="progress">
+            <div class="progress-text">Converting...</div>
+            <div class="spinner"></div>
+        </div>
+
+        <div class="error-message" id="errorMessage"></div>
+
+        <div class="download-section" id="downloadSection">
+            <div class="success-message">✅ Conversion completed successfully!</div>
+            <a href="#" class="download-btn" id="downloadBtn">Download DOCX File</a>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>© 2025 PTOD File — Free PDF to Word Converter</p>
+    </footer>
+
+    <script src="/js/script.js"></script>
+</body>
+</html>

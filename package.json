@@ -1,0 +1,25 @@
+{
+  "name": "pdftoword",
+  "version": "1.0.0",
+  "description": "PDF to Word converter application",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mittal122/pdftoword.git"
+  },
+  "keywords": [
+    "pdf",
+    "word",
+    "converter",
+    "docx"
+  ],
+  "author": "mittal122",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mittal122/pdftoword/issues"
+  },
+  "homepage": "https://github.com/mittal122/pdftoword#readme"
+}
