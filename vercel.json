@@ -1,5 +1,5 @@
 {
-  "name": "pdf-to-docx-converter",
+  "name": "mittal122-pdf-converter-app",
   "version": 2,
   "builds": [
     { "src": "api/*.py", "use": "@vercel/python" },
