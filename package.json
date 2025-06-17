@@ -1,5 +1,5 @@
 {
-  "name": "pdftoword",
+  "name": "pdf-to-docx-converter",
   "version": "1.0.0",
   "description": "PDF to Word converter application",
   "main": "index.js",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mittal122/pdftoword.git"
+    "url": "git+https://github.com/mittal122/pdftoword-vercel.git"
   },
   "keywords": [
     "pdf",
@@ -19,7 +19,7 @@
   "author": "mittal122",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/mittal122/pdftoword/issues"
+    "url": "https://github.com/mittal122/pdftoword-vercel/issues"
   },
-  "homepage": "https://github.com/mittal122/pdftoword#readme"
+  "homepage": "https://github.com/mittal122/pdftoword-vercel#readme"
 }
